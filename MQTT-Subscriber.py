@@ -7,7 +7,7 @@ red = LED(17)
 
 def on_connect(client, userdata, flags, rc):  
         print("Connected with result code "+str(rc))
-        client.subscribe("temp")
+        client.subscribe("temperature")
 
 def on_message(client, userdata, msg):  
         message = str(msg.payload)
